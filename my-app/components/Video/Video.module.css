@@ -1,0 +1,90 @@
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#000000d2, #0000004f);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  bottom: 100px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header {
+  font-size: 250%;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.description {
+  max-width: 700px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+.serviceBtn,
+.contactBtn {
+  padding: 10px 20px;
+  background: #171a20cc;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  font-size: 65%;
+  /* color: #fff; */
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 20px;
+  min-width: 200px;
+  text-align: center;
+  font-weight: 700;
+  transition: 400ms;
+  box-shadow: 0px 3px 12px #00000042;
+}
+
+.serviceBtn:hover {
+  background: #ff69af;
+  color: #141414;
+}
+
+.contactBtn:hover {
+  background: #fff;
+}
+
+.contactBtn {
+  background: #f4f4f4a6;
+  color: #393c41;
+  font-weight: 700;
+}
