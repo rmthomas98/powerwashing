@@ -1,6 +1,6 @@
 import styles from "./Video.module.css";
 import { useEffect, useRef } from "react";
-import { Link as ScrollLink } from "react-scroll";
+import Link from 'next/link'
 
 const Video = () => {
   const videoRef = useRef();
@@ -16,19 +16,15 @@ const Video = () => {
       </video>
       <div className={styles.overlay}></div>
       <div className={styles.container}>
-        <p className={styles.header}>Power Washing</p>
+        <p className={styles.header}>Elegant Power Washing</p>
         <p className={styles.description}>
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it
-          to.
+          Power washing company located in Dayton, Ohio. If your driveway, sidewalk, patio, or deck needs a cleaning, we are the people to call.
         </p>
         <div className={styles.buttonContainer}>
-          <ScrollLink to="/" smooth className={styles.serviceBtn}>
-            View Services
-          </ScrollLink>
-          <ScrollLink to="/" smooth className={styles.contactBtn}>
-            Contact
-          </ScrollLink>
+          <Link href="/estimates"><a className={styles.serviceBtn}>free estimate</a></Link>
+          <Link href="/contact">
+            <a className={styles.contactBtn}>contact</a>
+          </Link>
         </div>
       </div>
     </div>

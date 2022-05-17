@@ -17,7 +17,7 @@
 .overlay {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(#000000d2, #0000002c);
+  background: linear-gradient(#000000d2, #00000041);
   position: absolute;
   top: 0;
   left: 0;
@@ -39,7 +39,7 @@
 
 .header {
   font-size: 250%;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -70,12 +70,14 @@
   min-width: 200px;
   text-align: center;
   font-weight: 500;
-  transition: background 300ms ease-in;
+  transition: 300ms;
   box-shadow: 0px 3px 12px #00000042;
+  text-decoration: none;
 }
 
 .serviceBtn:hover {
-  background: #ef3539;
+  /* background: #ef3539; */
+  background: #171a20;
 }
 
 .contactBtn:hover {

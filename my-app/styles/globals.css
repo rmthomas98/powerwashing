@@ -43,5 +43,6 @@ html,
 body {
   font-size: 20px;
   font-family: "Gilroy", sans-serif;
+  scroll-snap-type: y proximity;
   color: #fff;
 }

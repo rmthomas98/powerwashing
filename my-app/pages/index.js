@@ -1,15 +1,17 @@
-import Nav from "../components/Nav/Nav";
-import Video from "../components/Video/Video";
-import About from "../components/About/About";
-import Driveway from "../components/Driveway/Driveway";
+import Nav from "../components/Home/Nav/Nav";
+import Video from "../components/Home/Video/Video";
+import Driveway from "../components/Home/Driveway/Driveway";
+import Deck from "../components/Home/Deck/Deck";
+import Patio from "../components/Home/Patio/Patio";
 
 const Index = () => {
   return (
     <>
       <Nav />
       <Video />
-      {/* <About /> */}
       <Driveway />
+      <Deck />
+      <Patio />
     </>
   );
 };
