@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DarkNav />
+      <Component {...pageProps} />
       <Footer />
     </>
   );

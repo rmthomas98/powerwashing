@@ -1,8 +1,11 @@
+import EstimatesMain from "../components/Estimates/Main/EstimatesMain";
+import Steps from "../components/Estimates/Steps/Steps";
 
 const Estimates = () => {
   return (
     <>
-    estimates
+      <EstimatesMain />
+      <Steps />
     </>
   );
 };
