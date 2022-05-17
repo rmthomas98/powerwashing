@@ -38,12 +38,12 @@
 }
 
 .link::after {
-  height: 1px;
+  height: 2px;
   width: 100%;
   position: absolute;
   left: 0;
   background: #fff;
-  content: '';
+  content: "";
   display: block;
   top: 24px;
   pointer-events: none;

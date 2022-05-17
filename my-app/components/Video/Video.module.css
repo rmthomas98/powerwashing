@@ -17,7 +17,7 @@
 .overlay {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(#000000d2, #0000004f);
+  background: linear-gradient(#000000d2, #0000002c);
   position: absolute;
   top: 0;
   left: 0;
@@ -69,14 +69,13 @@
   width: 20px;
   min-width: 200px;
   text-align: center;
-  font-weight: 600;
-  transition: 400ms;
+  font-weight: 500;
+  transition: background 300ms ease-in;
   box-shadow: 0px 3px 12px #00000042;
 }
 
 .serviceBtn:hover {
-  background: #ff69af;
-  color: #141414;
+  background: #ef3539;
 }
 
 .contactBtn:hover {
