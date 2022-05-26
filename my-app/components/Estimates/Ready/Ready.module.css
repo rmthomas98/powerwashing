@@ -1,0 +1,18 @@
+.wrapper {
+  padding: 75px 16px;
+  background: linear-gradient(45deg, #c4951e, #734bbd);
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.title {
+  font-size: 200%;
+  font-weight: 700;
+  text-align: center;
+}
+
+.getEstimateBtn {
+  padding: 8px 20px;
+}

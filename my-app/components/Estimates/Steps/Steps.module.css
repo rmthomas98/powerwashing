@@ -1,3 +1,55 @@
 .wrapper {
   padding: 100px 16px;
+  color: #000;
+  background: #f0f0f0;
+}
+
+.header {
+  font-size: 200%;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.wrapperFlexContainer {
+  display: flex;
+}
+
+.flexContainer {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  box-shadow: 0px 5px 20px #c4c4c4;
+  padding: 20px;
+  width: 100%;
+  background: #fff;
+}
+
+.step {
+  font-size: 75%;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 100%;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.description {
+  font-size: 75%;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.readyContainerWrapper {
+  padding: 100px 16px;
+  background: linear-gradient(45deg, cyan, pink);
 }
