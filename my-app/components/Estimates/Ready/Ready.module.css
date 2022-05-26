@@ -1,6 +1,6 @@
 .wrapper {
   padding: 75px 16px;
-  background: linear-gradient(45deg, #c4951e, #734bbd);
+  background: linear-gradient(45deg, #503386, #9861ff);
 }
 
 .container {
@@ -13,6 +13,25 @@
   text-align: center;
 }
 
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 .getEstimateBtn {
-  padding: 8px 20px;
+  padding: 6px 40px;
+  color: #000;
+  border: 2px solid #fff;
+  text-decoration: none;
+  font-size: 85%;
+  font-weight: 600;
+  background: #fff;
+  border-radius: 500px;
+  transition: background 300ms;
+}
+
+.getEstimateBtn:hover {
+  background: transparent;
+  color: #fff;
 }
