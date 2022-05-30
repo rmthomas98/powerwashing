@@ -37,7 +37,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <p className={styles.copyright}>&copy; Elegant 2022.</p>
+        <p className={styles.copyright}>&copy; Platinum 2022.</p>
       </div>
     </div>
   );
