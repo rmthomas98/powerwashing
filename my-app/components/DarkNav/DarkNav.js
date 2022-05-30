@@ -1,9 +1,12 @@
 import styles from "./DarkNav.module.css";
 import Link from "next/link";
+import useScrollPosition from "@react-hook/window-scroll";
 
 const Nav = () => {
+  const scrollPos = useScrollPosition(60);
+
   return (
-    <div className={styles.wrapper}>
+    <div className={scrollPos > 20 ? styles.boxShadow : styles.wrapper}>
       <div className={styles.container}>
         <Link href="/">
           <a className={styles.title}>Platinum</a>

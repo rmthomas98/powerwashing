@@ -11,7 +11,14 @@ const Video = () => {
 
   return (
     <div className={styles.wrapper}>
-      <video ref={videoRef} autoPlay loop muted className={styles.video}>
+      <video
+        ref={videoRef}
+        autoPlay
+        loop
+        playsInline
+        muted
+        className={styles.video}
+      >
         <source src="assets/videos/bg-video.mp4" />
       </video>
       <div className={styles.overlay}></div>
