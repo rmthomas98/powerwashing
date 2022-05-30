@@ -15,6 +15,7 @@ const Steps = () => {
           <div className={styles.flexContainer}>
             <Image
               src={message}
+              alt="message"
               layout="fixed"
               height={125}
               width={125}
@@ -28,6 +29,7 @@ const Steps = () => {
           <div className={styles.flexContainer}>
             <Image
               src={estimate}
+              alt="estimate"
               layout="fixed"
               height={125}
               width={125}
@@ -42,6 +44,7 @@ const Steps = () => {
           <div className={styles.flexContainer} style={{ marginRight: 0 }}>
             <Image
               src={schedule}
+              alt="calendar"
               layout="fixed"
               height={125}
               width={125}
