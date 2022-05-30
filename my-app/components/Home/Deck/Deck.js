@@ -12,7 +12,9 @@ const Deck = () => {
           to.
         </p>
         <div className={styles.buttonContainer}>
-          <Link href="/"><a className={styles.estimateBtn}>Get estimate</a></Link>
+          <Link href="/estimates">
+            <a className={styles.estimateBtn}>Get estimate</a>
+          </Link>
         </div>
       </div>
     </div>

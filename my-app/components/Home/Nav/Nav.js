@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <p className={styles.title}>Elegant</p>
+        <p className={styles.title}>Platinum</p>
         <div className={styles.linkContainer}>
           {/* <Link href="/services"><a className={styles.link}>Services</a></Link> */}
           <Link href="/estimates">

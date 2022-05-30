@@ -18,7 +18,7 @@
 .overlay {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(#000000d2, #00000041);
+  background: linear-gradient(#000000de, #0000005b);
   position: absolute;
   top: 0;
   left: 0;
@@ -49,6 +49,7 @@
   margin-bottom: 24px;
   font-weight: 400;
   line-height: 1.5;
+  font-size: 95%;
 }
 
 .buttonContainer {
@@ -89,4 +90,42 @@
   background: #f4f4f4a6;
   color: #393c41;
   font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    font-size: 190%;
+  }
+  .description {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 150%;
+  }
+  .description {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 130%;
+  }
+  .description {
+    font-size: 75%;
+  }
+  .buttonContainer {
+    flex-direction: column;
+  }
+  .contactBtn,
+  .serviceBtn {
+    width: 100%;
+  }
+
+  .serviceBtn {
+    margin-bottom: 15px;
+  }
 }

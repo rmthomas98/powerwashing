@@ -1,0 +1,162 @@
+.wrapper {
+  padding: 75px 16px;
+  background: #eeeeee;
+  color: #000;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.header {
+  font-size: 180%;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.nameContainer {
+  display: flex;
+}
+
+.firstNameContainer {
+  margin-right: 15px;
+}
+
+.input {
+  padding: 12px 14px;
+  border-radius: 6px;
+  box-shadow: 0px 3px 10px #d1d1d1;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 65%;
+  outline: none;
+  border: none;
+  width: 100%;
+  transition: 300ms;
+}
+
+.input:focus,
+.input:hover {
+  box-shadow: 0px 5px 20px #d1d1d1;
+}
+
+.textarea {
+  resize: none;
+  line-height: 1.5;
+  height: 100px;
+}
+
+.label,
+.textareaLabel {
+  font-size: 65%;
+  color: #000;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+  transition: 300ms;
+  pointer-events: none;
+}
+
+.textareaLabel {
+  top: 18px;
+}
+
+.filled {
+  top: -3px;
+  font-size: 60%;
+  background: #000;
+  color: #fff;
+  left: 14px;
+  font-weight: 600;
+  padding: 1px 6px;
+  position: absolute;
+  transform: translateY(-50%);
+  border-radius: 4px;
+}
+
+.inputContainer:focus-within .label,
+.inputContainer:focus-within .textareaLabel {
+  top: -3px;
+  font-size: 60%;
+  background: #000;
+  color: #fff;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.textareaLabelFilled {
+  top: -3px;
+  font-size: 60%;
+  background: #000;
+  color: #fff;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 14px;
+  transition: 300ms;
+  pointer-events: none;
+}
+
+.submitBtn,
+.disabled {
+  background: #4e4efa;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 65%;
+  padding: 8px 24px;
+  border-radius: 500px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.submitBtn:hover {
+  background: #3c3cc7;
+}
+
+.error {
+  position: absolute;
+  font-size: 55%;
+  font-weight: 600;
+  color: #ff0000;
+  margin-top: 3px;
+  margin-left: 2px;
+  pointer-events: none;
+  transition: 300ms;
+}
+
+.disabled {
+  background: #9b9bff;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 130%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 120%;
+  }
+}

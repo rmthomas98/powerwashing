@@ -1,6 +1,6 @@
 import styles from "./Video.module.css";
 import { useEffect, useRef } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 
 const Video = () => {
   const videoRef = useRef();
@@ -16,12 +16,15 @@ const Video = () => {
       </video>
       <div className={styles.overlay}></div>
       <div className={styles.container}>
-        <p className={styles.header}>Elegant Power Washing</p>
+        <p className={styles.header}>Platinum Power Washing</p>
         <p className={styles.description}>
-          Power washing company located in Dayton, Ohio. If your driveway, sidewalk, patio, or deck needs a cleaning, we are the people to call.
+          Power washing company located in Dayton, Ohio. If your driveway,
+          sidewalk, patio, or deck needs a cleaning, we are the people to call.
         </p>
         <div className={styles.buttonContainer}>
-          <Link href="/estimates"><a className={styles.serviceBtn}>free estimate</a></Link>
+          <Link href="/estimates">
+            <a className={styles.serviceBtn}>free estimate</a>
+          </Link>
           <Link href="/contact">
             <a className={styles.contactBtn}>contact</a>
           </Link>

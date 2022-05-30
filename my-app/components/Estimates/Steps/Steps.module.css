@@ -5,14 +5,14 @@
 }
 
 .header {
-  font-size: 200%;
+  font-size: 180%;
   font-weight: 700;
   text-align: center;
   margin-bottom: 50px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -52,4 +52,46 @@
 .readyContainerWrapper {
   padding: 100px 16px;
   background: linear-gradient(45deg, cyan, pink);
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    font-size: 150%;
+  }
+  .description {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrapperFlexContainer {
+    flex-direction: column;
+  }
+  .flexContainer {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 130%;
+  }
+  .title {
+    font-size: 90%;
+  }
+  .description {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 120%;
+  }
+  .title {
+    font-size: 85%;
+  }
+  .description {
+    font-size: 65%;
+  }
 }

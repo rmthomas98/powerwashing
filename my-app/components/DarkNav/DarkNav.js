@@ -6,7 +6,7 @@ const Nav = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <Link href="/">
-          <a className={styles.title}>Elegant</a>
+          <a className={styles.title}>Platinum</a>
         </Link>
         <div className={styles.linkContainer}>
           {/* <Link href="/services"><a className={styles.link}>Services</a></Link> */}

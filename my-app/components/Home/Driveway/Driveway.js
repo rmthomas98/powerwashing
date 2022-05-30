@@ -1,5 +1,5 @@
 import styles from "./Driveway.module.css";
-import Link from 'next/link'
+import Link from "next/link";
 
 const Driveway = () => {
   return (
@@ -12,7 +12,9 @@ const Driveway = () => {
           to.
         </p>
         <div className={styles.buttonContainer}>
-          <Link href="/"><a className={styles.estimateBtn}>Get estimate</a></Link>
+          <Link href="/estimates">
+            <a className={styles.estimateBtn}>Get estimate</a>
+          </Link>
         </div>
       </div>
     </div>
