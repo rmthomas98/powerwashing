@@ -5,7 +5,7 @@ const EstimatesMain = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <p className={styles.header}>Schedule a free estimate today.</p>
+        <p className={styles.header}>Schedule a free estimate.</p>
         <p className={styles.description}>
           You don&#39;t have to worry about spending money when receiving an
           estimate from us. All of our quotes are 100% free. All you have to do

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 .wrapper {
   padding: 75px 16px;
   background: #eeeeee;
@@ -23,6 +30,8 @@
 }
 
 .nameContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -33,6 +42,7 @@
 .input {
   padding: 12px 14px;
   border-radius: 6px;
+  -webkit-box-shadow: 0px 3px 10px #d1d1d1;
   box-shadow: 0px 3px 10px #d1d1d1;
   font-family: inherit;
   font-weight: 600;
@@ -40,11 +50,14 @@
   outline: none;
   border: none;
   width: 100%;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
   transition: 300ms;
 }
 
 .input:focus,
 .input:hover {
+  -webkit-box-shadow: 0px 5px 20px #d1d1d1;
   box-shadow: 0px 5px 20px #d1d1d1;
 }
 
@@ -61,8 +74,12 @@
   font-weight: 600;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 14px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
   transition: 300ms;
   pointer-events: none;
 }
@@ -80,6 +97,8 @@
   font-weight: 600;
   padding: 1px 6px;
   position: absolute;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   border-radius: 4px;
 }
@@ -103,8 +122,12 @@
   border-radius: 4px;
   font-weight: 600;
   position: absolute;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 14px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
   transition: 300ms;
   pointer-events: none;
 }
@@ -121,6 +144,8 @@
   border-radius: 500px;
   font-family: inherit;
   cursor: pointer;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
   transition: 300ms;
 }
 
@@ -136,6 +161,8 @@
   margin-top: 3px;
   margin-left: 2px;
   pointer-events: none;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
   transition: 300ms;
 }
 
