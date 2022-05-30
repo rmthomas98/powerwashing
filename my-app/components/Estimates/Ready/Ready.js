@@ -4,7 +4,7 @@ import Link from "next/link";
 const Ready = () => {
   return (
     <div className={styles.wrapper}>
-      <div classnName={styles.container}>
+      <div className={styles.container}>
         <p className={styles.title}>Ready to get an estimate?</p>
         <div className={styles.btnContainer}>
           <Link href="/contact">
