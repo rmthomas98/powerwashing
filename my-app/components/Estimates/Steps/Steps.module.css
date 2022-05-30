@@ -38,6 +38,8 @@
   padding: 20px;
   width: 100%;
   background: #fff;
+  -webkit-filter: hue-rotate(260deg);
+  filter: hue-rotate(260deg);
 }
 
 .step {
