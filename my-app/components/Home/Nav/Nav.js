@@ -1,7 +1,7 @@
 import styles from "./Nav.module.css";
 import Link from "next/link";
 
-const Nav = () => {
+const Nav = ({ setIsActive, isActive }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -14,6 +14,14 @@ const Nav = () => {
           <Link href="/contact">
             <a className={styles.contactBtn}>Contact</a>
           </Link>
+        </div>
+        <div
+          className={styles.mobileBurgerContainer}
+          onClick={() => setIsActive(!isActive)}
+        >
+          <div className={styles.barOne}></div>
+          <div className={styles.barTwo}></div>
+          <div className={styles.barThree}></div>
         </div>
       </div>
     </div>

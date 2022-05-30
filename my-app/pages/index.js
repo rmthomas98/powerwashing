@@ -4,8 +4,18 @@ import Driveway from "../components/Home/Driveway/Driveway";
 import Deck from "../components/Home/Deck/Deck";
 import Patio from "../components/Home/Patio/Patio";
 import Head from "next/head";
+import MobileMenu from "../components/MobileMenu/MobileMenu";
+import { useEffect, useState } from "react";
+import { useWindowWidth } from "@react-hook/window-size";
 
 const Index = () => {
+  const [isActive, setIsActive] = useState(false);
+  const width = useWindowWidth();
+
+  useEffect(() => {
+    if (width > 580) setIsActive(false);
+  }, [width]);
+
   return (
     <>
       <Head>
@@ -19,11 +29,12 @@ const Index = () => {
           content="powerwashing, near me, dayton, ohio, power, washing, sidewalk, driveway, house, free estimate"
         />
       </Head>
-      <Nav />
+      <Nav setIsActive={setIsActive} isActive={isActive} />
       <Video />
       <Driveway />
       <Deck />
       <Patio />
+      <MobileMenu isActive={isActive} setIsActive={setIsActive} />
     </>
   );
 };

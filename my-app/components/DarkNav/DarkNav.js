@@ -2,7 +2,7 @@ import styles from "./DarkNav.module.css";
 import Link from "next/link";
 import useScrollPosition from "@react-hook/window-scroll";
 
-const Nav = () => {
+const Nav = ({ isActive, setIsActive }) => {
   const scrollPos = useScrollPosition(60);
 
   return (
@@ -19,6 +19,14 @@ const Nav = () => {
           <Link href="/contact">
             <a className={styles.contactBtn}>Contact</a>
           </Link>
+        </div>
+        <div
+          className={styles.mobileBurgerContainer}
+          onClick={() => setIsActive(!isActive)}
+        >
+          <div className={styles.barOne} style={{ background: "#000" }}></div>
+          <div className={styles.barTwo} style={{ background: "#000" }}></div>
+          <div className={styles.barThree} style={{ background: "#000" }}></div>
         </div>
       </div>
     </div>

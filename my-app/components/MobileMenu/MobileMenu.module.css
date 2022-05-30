@@ -1,0 +1,85 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+.wrapper,
+.show {
+  position: fixed;
+  width: 0px;
+  background: #030714;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 100vh;
+  -webkit-box-shadow: 0px 0px 10px #000000c5;
+  box-shadow: 0px 0px 10px #000000c5;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  overflow: hidden;
+}
+
+.show {
+  width: 250px;
+}
+
+.overlay,
+.hide {
+  height: 100vh;
+  width: 100%;
+  background: #0000004b;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.hide {
+  opacity: 0;
+  z-index: -1;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 24px 16px;
+}
+
+.header {
+  font-size: 120%;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.link {
+  margin-bottom: 24px;
+  color: #fcf9d7;
+  font-weight: 500;
+  font-size: 75%;
+  text-decoration: none;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  -webkit-transition-delay: 300ms;
+  -o-transition-delay: 300ms;
+  transition-delay: 300ms;
+  min-width: 200px;
+}

@@ -4,9 +4,18 @@ import DarkNav from "../components/DarkNav/DarkNav";
 import Footer from "../components/Footer/Footer";
 import Head from "next/head";
 import Script from "next/script";
+import { useState, useEffect } from "react";
+import MobileMenu from "../components/MobileMenu/MobileMenu";
+import { useWindowWidth } from "@react-hook/window-size";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  const [isActive, setIsActive] = useState(false);
+  const width = useWindowWidth();
+
+  useEffect(() => {
+    if (width > 580) setIsActive(false);
+  }, [width]);
 
   if (router.pathname.endsWith("/")) {
     return (
@@ -65,7 +74,8 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <DarkNav />
+      <DarkNav isActive={isActive} setIsActive={setIsActive} />
+      <MobileMenu isActive={isActive} setIsActive={setIsActive} />
       <Component {...pageProps} />
       <Footer />
     </>

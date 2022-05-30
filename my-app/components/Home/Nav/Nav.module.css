@@ -83,8 +83,46 @@
   color: #000;
 }
 
+.mobileBurgerContainer {
+  display: none;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  z-index: 9999;
+}
+
+.barOne {
+  height: 2px;
+  width: 24px;
+  background: #fff;
+  margin-bottom: 4px;
+  pointer-events: none;
+}
+
+.barTwo {
+  background: #fff;
+  width: 18px;
+  height: 2px;
+  position: relative;
+  left: 6px;
+  margin-bottom: 4px;
+  pointer-events: none;
+}
+
+.barThree {
+  background: #fff;
+  width: 12px;
+  height: 2px;
+  position: relative;
+  left: 12px;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 600px) {
-  .link {
+  .linkContainer {
     display: none;
+  }
+  .mobileBurgerContainer {
+    display: block;
   }
 }
