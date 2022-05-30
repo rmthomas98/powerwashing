@@ -82,4 +82,8 @@
   .description {
     font-size: 70%;
   }
+  .estimateBtn {
+    padding: 4px 14px;
+    width: 180px;
+  }
 }
