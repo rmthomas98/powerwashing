@@ -1,7 +1,7 @@
 import styles from "./Steps.module.css";
-import message from "../../../public/assets/images/contact.png";
-import estimate from "../../../public/assets/images/estimate.png";
-import schedule from "../../../public/assets/images/schedule.png";
+import message from "../../../public/assets/images/contact.svg";
+import estimate from "../../../public/assets/images/estimate.svg";
+import schedule from "../../../public/assets/images/schedule.svg";
 import Image from "next/image";
 
 const Steps = () => {
@@ -17,8 +17,8 @@ const Steps = () => {
               src={message}
               alt="message"
               layout="fixed"
-              height={125}
-              width={125}
+              height={85}
+              width={85}
               quality={100}
             />
             <p className={styles.title}>Contact Us</p>
@@ -31,8 +31,8 @@ const Steps = () => {
               src={estimate}
               alt="estimate"
               layout="fixed"
-              height={125}
-              width={125}
+              height={85}
+              width={85}
               quality={100}
             />
             <p className={styles.title}>Receive Estimate</p>
@@ -46,8 +46,8 @@ const Steps = () => {
               src={schedule}
               alt="calendar"
               layout="fixed"
-              height={125}
-              width={125}
+              height={85}
+              width={85}
               quality={100}
             />
             <p className={styles.title}>Schedule Job</p>

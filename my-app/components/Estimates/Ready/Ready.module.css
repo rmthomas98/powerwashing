@@ -7,15 +7,8 @@
 
 .wrapper {
   padding: 75px 16px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#7f00ff),
-    to(#e100ff)
-  );
-  background: -o-linear-gradient(left, #7f00ff, #e100ff);
-  background: linear-gradient(to right, #7f00ff, #e100ff);
+  background: -o-linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background: linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d);
 }
 
 .container {
