@@ -16,7 +16,7 @@ const handler = async (req, res) => {
 
     const msg = {
       from: "rmthomas1998@gmail.com",
-      to: "rmthomas1998@gmail.com",
+      to: "jeffm2000@gmail.com",
       subject: "Powerwashing Inquiry",
       html: `<div><p>First Name: ${firstName}</p><p>Last Name: ${lastName}</p><p>Email: ${email}</p><p>Phone: ${phone}</p><p>Message: ${message}</p></div>`,
     };
